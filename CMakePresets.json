@@ -1,0 +1,27 @@
+{
+  "version": 8,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "vscode-cpp-cmake-template-gcc",
+      "displayName": "vscode-cpp-cmake-template-gcc",
+      "description": "vscode-cpp-cmake-template",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "vscode-cpp-cmake-template-vs",
+      "displayName": "vscode-cpp-cmake-template-vs",
+      "description": "vscode-cpp-cmake-template",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build"
+    }
+  ]
+}
