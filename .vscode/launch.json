@@ -15,6 +15,7 @@
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
+      "preLaunchTask": "CMake: build"
     },
     {
       "name": "(Windows) Launch",
