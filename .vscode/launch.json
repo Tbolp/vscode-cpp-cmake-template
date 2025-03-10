@@ -5,7 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) Launch",
+      "name": "(lldb) Launch-MacOS",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/app/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "CMake: build"
+    },
+    {
+      "name": "(gdb) Launch-Windows",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/app/main.exe",
@@ -18,7 +31,7 @@
       "preLaunchTask": "CMake: build"
     },
     {
-      "name": "(Windows) Launch",
+      "name": "(Windows) Launch-Windows",
       "type": "cppvsdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/app/Debug/main.exe",
